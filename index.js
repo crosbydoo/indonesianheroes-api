@@ -21,9 +21,9 @@ const showAllowedMethods = (req, res, next) => {
     next();
   };
 
-app.get('/', (req, res) => {
-    res.send('Ini adalah halaman utama dengan daftar metode yang diizinkan.');
-});
+// app.get('/', (req, res) => {
+//     res.send('Ini adalah halaman utama dengan daftar metode yang diizinkan.');
+// });
 
 app.use(express.json());
 app.use('/', showAllowedMethods);
