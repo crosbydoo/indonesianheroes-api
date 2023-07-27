@@ -18,7 +18,7 @@ database.once('connected', () => {
 const app = express();
 
 app.use(express.json());
-app.use('/', pahlawan)
+app.use('/api/heroes', pahlawan)
 app.use('/api/auth', routes);
 
 app.listen(process.env.PORT || 3002, console.log(`Server Started at ${process.env.PORT}!`))
