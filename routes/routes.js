@@ -17,4 +17,7 @@ router.get("/:id", pahlawanController.getHeroes);
 //GET ALL HEROES
 router.get("/", pahlawanController.getAllHeroes);
 
+//SEARCH HEROES
+router.get("/search/:key", pahlawanController.searchHeroes);
+
 module.exports = router;

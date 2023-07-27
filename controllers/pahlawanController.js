@@ -58,4 +58,27 @@ module.exports = {
             res.status(500).json(error);
         }
     },
+
+    searchHeroes: async (req, res) => {
+        try {
+            const results = await Pahlawan.aggregate(
+                [
+                    {
+                      $search: {
+                        index: "searchheroes",
+                        text: {
+                          query: req.params.key,
+                          path: {
+                            wildcard: "*"
+                          }
+                        }
+                      }
+                    }
+                  ]
+            )
+            res.status(200).json(results);
+        } catch (error) {
+            res.status(500).json(error);
+        }
+    },
 }
