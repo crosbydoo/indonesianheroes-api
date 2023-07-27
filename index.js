@@ -16,8 +16,17 @@ database.once('connected', () => {
     console.log('Database Connected');
 })
 const app = express();
+const showAllowedMethods = (req, res, next) => {
+    res.setHeader('Allow', 'GET');
+    next();
+  };
+
+app.get('/', (req, res) => {
+    res.send('Ini adalah halaman utama dengan daftar metode yang diizinkan.');
+});
 
 app.use(express.json());
+app.use('/', showAllowedMethods);
 app.use('/api/heroes', pahlawan)
 app.use('/api/auth', routes);
 
