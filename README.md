@@ -64,9 +64,10 @@ Sebuah layanan API yang memberikan informaasi mengenai seputar pahlawan Negara K
 
 ## Thanks To
 - Allah SWT
-- Kedua Orang Tua Saya Tercinta
-- Diri saya sendiri
-- Dida Yulanda sebagai motivasi saya untuk terus bisa maju.
+- Keluarga Saya Tercinta
+- Diri saya sendiri.
+- Teman - Teman dan Sahabat Saya yang Handsome dan Cantik.
+- Dida Yulanda sebagai seseorang yang memotivasi saya untuk terus bisa maju hingga saat ini.
 - Mas Yuristianto sebagai penyedia Hero.json
-- Dan semua pihak yang tidak bisa saya sebutkan masing-masing.
+- Dan semua pihak yang terlibat dan tidak bisa saya sebutkan satu persatu.
 
