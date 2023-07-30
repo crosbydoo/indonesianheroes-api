@@ -1,7 +1,8 @@
 
 # Pahlawan Indonesia API
 
-Sebuah layanan API yang memberikan informaasi mengenai seputar pahlawan Negara Kesatuan Republik Indonesia
+Sebuah layanan API yang memberikan informaasi mengenai seputar pahlawan Negara Kesatuan Republik Indonesia. API ini terinspirasi dari API Lokal Indonesia yang sama dengan api ini namun sudah diakses dan saya menemukan data JSON-nya kemudian dari situ saya berinisiatif membuat apinya. Source Sumber Hero.json nya ada <a href="https://gist.github.com/yuristianto/d2b2f75292927f15b633d9f8a3bd4ec6">Disini</a>
+
 
 
 ## ENPOINTS
@@ -59,13 +60,12 @@ Sebuah layanan API yang memberikan informaasi mengenai seputar pahlawan Negara K
 },
 ````
 
-#### add(num1, num2)
 
-Takes two numbers and returns the sum.
-
-
-## Authors
-
-#### API dibuat oleh
-- [@crosbydoo](https://www.github.com/crosbydoo)
+## Thanks To
+- Allah SWT
+- Kedua Orang Tua Saya Tercinta
+- Diri saya sendiri
+- Dida Yulanda sebagai motivasi saya untuk terus bisa maju.
+- Mas Yuristianto sebagai penyedia Hero.json
+- Dan semua pihak yang tidak bisa saya sebutkan masing-masing.
 
