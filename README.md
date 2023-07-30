@@ -1,7 +1,7 @@
 
 # Pahlawan Indonesia API
 
-Sebuah layanan API yang memberikan informaasi mengenai seputar pahlawan Negara Kesatuan Republik Indonesia. API ini terinspirasi dari API Lokal Indonesia yang sama dengan api ini namun sudah diakses dan saya menemukan data JSON-nya kemudian dari situ saya berinisiatif membuat apinya. Source Sumber Hero.json nya ada <a href="https://gist.github.com/yuristianto/d2b2f75292927f15b633d9f8a3bd4ec6">Disini</a>
+Sebuah layanan API yang memberikan informaasi mengenai seputar pahlawan Negara Kesatuan Republik Indonesia. API ini terinspirasi dari API Lokal Indonesia yang sama dengan api ini namun sudah diakses dan saya menemukan data JSON-nya kemudian dari situ saya berinisiatif membuat apinya. Source Sumber Hero.json nya ada <a href="https://gist.github.com/yuristianto/d2b2f75292927f15b633d9f8a3bd4ec6" target="_blank">Disini</a>
 
 
 
