@@ -1,7 +1,71 @@
-# indonesianheroes-api
-Indonesian heroes API is open source API. API filled by data from indonesian national documentary archive, the data such name of heroes , date birth and many more.
+
+# Pahlawan Indonesia API
+
+Sebuah layanan API yang memberikan informaasi mengenai seputar pahlawan Negara Kesatuan Republik Indonesia
 
 
-SOURCE Data Pahlawan Indonesia saya mendapatkan dari repository punya bang yuristianto untuk reponya ini : <a href="https://gist.github.com/yuristianto/d2b2f75292927f15b633d9f8a3bd4ec6">Pahlawan Indonesia</a>
+## ENPOINTS
 
-NOTE : DOKUMENTASI API DAN SUMBER LITERATUR SEGERA MENYUSUL 
+### 1. GET All Pahlawan
+
+```http
+  GET https://pahlawanindonesia-api.cyclic.app/api/heroes
+```
+#### Contoh Response
+```http
+[
+    {
+        "_id": "64c0cea37463c276206c725f",
+        "nama": "A.H. Nasution ",
+        "nama2": "Jendral Besar Dr.Abdul Haris Nasution",
+        "kategori": "Pahlawan Nasional",
+        "asal": "Sumatera Utara",
+        "lahir": "Selasa, 3 Desember 1918 di Kotanopan, Mandailing Natal, Sumatera Utara",
+        "usia": "81 tahun",
+        "gugur": "Selasa Wage, 5 September 2000 di Jakarta, Indonesia",
+        "lokasimakam": "Taman Makam Pahlawan (TMP) Kalibata, Jakarta.",
+        "history": "Jenderal Besar TNI, Panglima Angkatan Perang Republik Indonesia",
+        "img": "https://image.ibb.co/cexrRK/a_h_nasution.jpg",
+        "__v": 0
+    },
+    ...
+]
+````
+#### 2. GET Pahlawan
+
+```http
+  GET https://pahlawanindonesia-api.cyclic.app/api/heroes/{id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of item to fetch |
+
+#### Contoh Response
+```http
+{
+    "_id": "64c0cea37463c276206c725f",
+    "nama": "A.H. Nasution ",
+    "nama2": "Jendral Besar Dr.Abdul Haris Nasution",
+    "kategori": "Pahlawan Nasional",
+    "asal": "Sumatera Utara",
+    "lahir": "Selasa, 3 Desember 1918 di Kotanopan, Mandailing Natal, Sumatera Utara",
+    "usia": "81 tahun",
+    "gugur": "Selasa Wage, 5 September 2000 di Jakarta, Indonesia",
+    "lokasimakam": "Taman Makam Pahlawan (TMP) Kalibata, Jakarta.",
+    "history": "Jenderal Besar TNI, Panglima Angkatan Perang Republik Indonesia",
+    "img": "https://image.ibb.co/cexrRK/a_h_nasution.jpg",
+    "__v": 0
+},
+````
+
+#### add(num1, num2)
+
+Takes two numbers and returns the sum.
+
+
+## Authors
+
+#### API dibuat oleh
+- [@crosbydoo](https://www.github.com/crosbydoo)
+
