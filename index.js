@@ -4,7 +4,6 @@ const pahlawan = require('./routes/routes');
 const express = require('express');
 const mongoose = require('mongoose');
 const mongoString = process.env.DATABASE_URL;
-import bodyParser from 'body-parser';
 const swaggerUi = require('swagger-ui-express');
 const swaggerSumDocument = require ('./swaggerUI.json');
 
@@ -29,7 +28,6 @@ const showAllowedMethods = (req, res, next) => {
 // });
 
 app.use(express.json());
-app.use(bodyParser.json());
 app.use('/api/heroes', pahlawan)
 app.use('/api/auth', routes);
 app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerSumDocument));
