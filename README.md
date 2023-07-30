@@ -7,7 +7,7 @@ Sebuah layanan API yang memberikan informaasi mengenai seputar pahlawan Negara K
 
 ## ENPOINTS
 
-### 1. GET All Pahlawan
+#### 1. GET All Pahlawan
 
 ```
   GET https://pahlawanindonesia-api.cyclic.app/api/heroes
