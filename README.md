@@ -8,11 +8,11 @@ Sebuah layanan API yang memberikan informaasi mengenai seputar pahlawan Negara K
 
 ### 1. GET All Pahlawan
 
-```http
+```
   GET https://pahlawanindonesia-api.cyclic.app/api/heroes
 ```
 #### Contoh Response
-```http
+```
 [
     {
         "_id": "64c0cea37463c276206c725f",
@@ -33,7 +33,7 @@ Sebuah layanan API yang memberikan informaasi mengenai seputar pahlawan Negara K
 ````
 #### 2. GET Pahlawan
 
-```http
+```
   GET https://pahlawanindonesia-api.cyclic.app/api/heroes/{id}
 ```
 
@@ -42,7 +42,7 @@ Sebuah layanan API yang memberikan informaasi mengenai seputar pahlawan Negara K
 | `id`      | `string` | **Required**. Id of item to fetch |
 
 #### Contoh Response
-```http
+```
 {
     "_id": "64c0cea37463c276206c725f",
     "nama": "A.H. Nasution ",
