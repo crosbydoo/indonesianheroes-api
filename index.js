@@ -20,16 +20,19 @@ database.once('connected', () => {
 const app = express();
 const swaggerDocs = swaggerDefinition;
 
-
-app.use(express.json());
-app.use('/api/heroes', pahlawan)
-app.use('/api/auth', routes);
-app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
     next();
+  });
+
+app.use(express.json());
+app.use('/api/heroes', pahlawan)
+app.use('/api/auth', routes);
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs, {deepLinking: true }));
+app.get('/', (res) => {
+    res.redirect('/api-docs');
   });
 
 app.listen(process.env.PORT || 3002, console.log(`Server Started at ${process.env.PORT}!`))
