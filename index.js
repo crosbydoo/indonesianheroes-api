@@ -30,10 +30,10 @@ app.use((req, res, next) => {
 app.use(express.json());
 app.use('/api/heroes', pahlawan)
 app.use('/api/auth', routes);
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs, {deepLinking: true }));
 app.get('/', (res) => {
     res.redirect('/api-docs');
   });
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs, {deepLinking: true }));
 
 app.listen(process.env.PORT || 3002, console.log(`Server Started at ${process.env.PORT}!`))
 
