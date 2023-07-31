@@ -1,0 +1,73 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Pahlawan Indonesia API",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://pahlawanindonesia-api.cyclic.app/api/",
+      "description": "Server Pahlawan Indonesia API"
+    }
+  ],
+  "paths": {
+    "/heroes": {
+      "get": {
+        "summary": "Mengambil daftar semua Pahlawan",
+        "responses": {
+          "200": {
+            "description": "Daftar Pahlawan berhasil diambil"
+          }
+        }
+      }
+    },
+    "/heroes/{id}": {
+      "get": {
+        "summary": "Mengambil informasi Pahlawan berdasarkan ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "ID Pahlawan",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Informasi Pahlawan berhasil diambil"
+          },
+          "404": {
+            "description": "Pahlawan tidak ditemukan"
+          }
+        }
+      }
+    },
+    "/heroes/search/{name}": {
+      "get": {
+        "summary": "Mencari Pahlawan berdasarkan nama",
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "required": true,
+            "description": "Nama Pahlawan",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Pencarian Pahlawan berhasil"
+          },
+          "404": {
+            "description": "Pahlawan dengan nama tersebut tidak ditemukan"
+          }
+        }
+      }
+    }
+  }
+}
