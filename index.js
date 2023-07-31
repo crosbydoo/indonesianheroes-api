@@ -37,9 +37,7 @@ app.use((req, res, next) => {
     }
     next();
   });
-  app.get('/api-docs', (req, res) => {
-    res.sendFile(__dirname + '/swagger.html'); // Mengirimkan file HTML untuk menampilkan halaman Swagger UI
-});
+  
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs, {deepLinking: true }));
 
 app.listen(process.env.PORT || 3002, console.log(`Server Started at ${process.env.PORT}!`))
