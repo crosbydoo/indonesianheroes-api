@@ -31,7 +31,7 @@
             "required": true,
             "description": "ID Pahlawan",
             "schema": {
-              "type": "integer"
+              "type": "string"
             }
           }
         ],
@@ -45,12 +45,12 @@
         }
       }
     },
-    "/heroes/search/{name}": {
+    "/heroes/search/{nama}": {
       "get": {
         "summary": "Mencari Pahlawan berdasarkan nama",
         "parameters": [
           {
-            "name": "name",
+            "name": "nama",
             "in": "path",
             "required": true,
             "description": "Nama Pahlawan",
