@@ -30,8 +30,12 @@ app.use((req, res, next) => {
 app.use(express.json());
 app.use('/api/heroes', pahlawan)
 app.use('/api/auth', routes);
-app.get('/', (res) => {
-    res.redirect('/api-docs');
+app.use((req, res, next) => {
+    if (req.originalUrl === '/') {
+      res.set('Location', '/api-docs');
+      return res.status(302).send();
+    }
+    next();
   });
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs, {deepLinking: true }));
 
